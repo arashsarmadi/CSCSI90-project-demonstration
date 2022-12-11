@@ -11,6 +11,13 @@ for i in data:
     if i == "D":
         print("found item")
 
+def find_string_noncompliant():
+    data = set(["sampleString1", "sampleString2", "sampleString3"])
+    # Noncompliant: a loop is used to access a single item.
+    for i in data:
+        if i == "sampleString1":
+            print("found item")
+
 #Improper error handiling (security)
 def division(a,b):
     try:
