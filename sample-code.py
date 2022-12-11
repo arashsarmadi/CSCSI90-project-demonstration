@@ -6,10 +6,10 @@ for line in file:
     print(line)
 
 #Unnecessary iteration (code quality)
-data = ["A", "B", "C", "D", "E"]
-for i in data:
-    if i == "D":
-        print("found item")
+data = set(["A", "B", "C", "D", "E"])
+for ii in data:
+    if ii == "D":
+        print("found items")
 
 def find_string_noncompliant():
     data = set(["sampleString1", "sampleString2", "sampleString3"])
